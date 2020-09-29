@@ -1,15 +1,11 @@
 ## 这是一个基于vue全家桶+node.js+express+mysql实现的商城网站
 
-注意：本项目只是一个个人demo，只用于学习交流，故不在维护！
-
-项目github地址：[vueMall](https://github.com/wzz5304/vueMall)
+项目github地址：[web_shopping](https://github.com/shao353124505/web_shopping)
 
 如果觉得对您有帮助，您可以在右上角给我个star支持一下，谢谢！
 
 ### 项目结构
 如下图所示：
-
-![项目结构](https://user-gold-cdn.xitu.io/2018/1/17/16102c6c85f4227d?w=418&h=625&f=png&s=25028)
 
 **注**：该项目是真实的请求后台api。server为后端数据接口项目结构，运行时可以单独拿出来放在[wamp](http://www.wampserver.com/en/)/www下或者[xammp](http://rj.baidu.com/soft/detail/12489.html?ald)/htdocs 这两是集成包（apache+php+mysql...）没用过的小伙伴可以百度学习学习很容易的。当然你也可以自己单独配置Mysql环境，这个看个人习惯。**连接Mysql代码在server/conf/conf.js**大家只要将配置信息改成自己的就行。表创建**sql语句在server/malldata.sql**文件内大家可以直接复制插入就ok。我的数据库名是**malldata**，大家不一样的记得改，不懂的用数据库的小伙伴们去百度百度很容易的，基本的增删改查会就够了。
 
@@ -43,7 +39,7 @@ npm run build
 
   键入命令：npm install -g vue-cli
 - **express**
- 
+
   键入命令：cnpm i -g express-generator
 
 不懂的改后台监听端口的可以[打开](https://juejin.im/post/5a5eac7af265da3e4f0a2fba)查看，对你有帮助记得给个爱心哦，谢谢！
@@ -63,7 +59,7 @@ npm run build
     - 地址管理
     - 模拟支付（由于调用不了支付接口）
     - 订单管理
-    
+
 ```
 - 功能说明
 ```
@@ -83,4 +79,4 @@ npm run build
  - ES6 [http://es6.ruanyifeng.com/](http://es6.ruanyifeng.com/)
  - Sticky footers [https://juejin.im/post/5a52d62a518825734c5b3c37](https://juejin.im/post/5a52d62a518825734c5b3c37)
  - awesome-vue [https://github.com/vuejs/awesome-vue](https://github.com/vuejs/awesome-vue)
- 
+
