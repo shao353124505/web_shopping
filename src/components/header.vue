@@ -94,7 +94,7 @@
                       </div>
                       <div class="nav-cart-total">
                         <p>共<strong>{{cartCount}}</strong> 件商品</p>
-                        <h5>合计：<span class="price-icon">¥</span><span class="price-num">{{totalPrice}}</span  ></h5> 
+                        <h5>合计：<span class="price-icon">¥</span><span class="price-num">{{totalPrice}}</span  ></h5>
                         <h6 >
                         <router-link to='/cart'>
                           <input type="button" readonly="readonly" class="main-btn" value="去购物车" style="height: 40px; width: 100%; margin: 0px; color: rgb(255, 255, 255); font-size: 14px; line-height: 38px;">
@@ -141,8 +141,8 @@
                       <span class="el-checkbox__inner"></span>
                       <input type="checkbox" class="el-checkbox__original" value="">
                       </span><span class="el-checkbox__label">记住密码<!----></span>
-                    </label> 
-                    <a href="javascript:;" class="register acolor" @click="ifRegister">立即注册</a> 
+                    </label>
+                    <a href="javascript:;" class="register acolor" @click="ifRegister">立即注册</a>
                     <a style="padding: 1px 0px 0px 10px;" class="acolor">忘记密码 ?</a>
                   </li>
                 </ul>
@@ -329,7 +329,7 @@ export default {
           } else {
             this.$store.commit('updateHaveProduct', false);
           }
-          
+
         }else if(res.status==='0'){
           console.log('没有数据,请添加');
         }else{
@@ -393,7 +393,7 @@ export default {
     				this.$store.commit('updateGoodslist', res.result);
     			    this.$store.commit('checkGoodLen', true);
     			}
-    			
+
     		}
     	});
     }
@@ -405,7 +405,7 @@ export default {
 }
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
-    .header 
+    .header
       position:fixed
       margin-top: -1px
       z-index:999
@@ -484,7 +484,7 @@ export default {
                 left: 50%
                 transform: translateX(-50%)
               .nav-user-avatar
-                div 
+                div
                   position: relative
                   margin: 0 auto 8px
                   width: 46px
@@ -519,7 +519,7 @@ export default {
                 font-size: 12px
                 &:hover
                   background:#f7f7f7
-                a 
+                a
                   display: block
                   color: #616161
           .navbar-cart-container
@@ -539,7 +539,7 @@ export default {
                 transition: none
             .navbar-cart-count
               top: 0px;
-              right: -20px; 
+              right: -20px;
             .nav-user-wrapper
               position:absolute
               top: 18px
@@ -600,7 +600,7 @@ export default {
                             width: 80px
                             height: 80px
                             border-radius: 3px
-                            img 
+                            img
                               display: block
                               width: 100%
                               height: 100%
@@ -629,7 +629,7 @@ export default {
                                 font-size: 12px
                                 line-height: 14px
                                 margin-top: 20px
-                                span 
+                                span
                                   display: inline-block
                                   font-weight: 700
                                   color: #cacaca
@@ -640,7 +640,7 @@ export default {
                                   font-size: 14px
                                   color: #d44d44
                                 .item-num
-                                  margin-left: 10px                 
+                                  margin-left: 10px
                           .del-btn
                             display: block
                             cursor: pointer
@@ -649,7 +649,7 @@ export default {
                             background: url('../../static/images/icon.png') -50px -60px no-repeat;
                             background-size: 240px 107px
                             text-indent: -9999em
-                          .del 
+                          .del
                             display: none
                             overflow: hidden
                             position: absolute
@@ -668,7 +668,7 @@ export default {
                     border-radius: 0 0 8px 8px
                     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), 0 -3px 8px rgba(0, 0, 0, 0.04)
                     background: linear-gradient(#fafafa, #f5f5f5)
-                    p 
+                    p
                       margin-bottom: 4px
                       line-height: 16px
                       font-size: 12px
@@ -677,7 +677,7 @@ export default {
                       line-height: 20px
                       font-size: 14px
                       color: #6f6f6f
-                      span 
+                      span
                         font-size: 18px
                         color: #de4037
                         display: inline-block
@@ -705,15 +705,15 @@ export default {
                         color: #fff
                         background-color: rgb(209, 67, 74)
                         background-image: linear-gradient(180deg, rgb(209, 67, 74), rgb(209, 67, 74))
-                        vertical-align: middle  
+                        vertical-align: middle
                 .cart-con
                   text-align: center
                   position: relative
                   background:url('../../static/images/cart-empty-new.png') no-repeat center
-                  p 
+                  p
                     padding-top: 190px
                     color: #333333
-                    font-size: 16px   
+                    font-size: 16px
       .md-login-modal
         width:480px
         @media (max-width:767px)
@@ -725,8 +725,8 @@ export default {
             @media (max-width:767px)
               position:absolute
               top:10px
-          ul 
-            width:100% 
+          ul
+            width:100%
             .regi_form_input
               border-radius:6px
               width:100%
@@ -748,7 +748,7 @@ export default {
                 .el-checkbox__label
                   font-size: 14px
                   padding-left: 5px
-            .acolor 
+            .acolor
               color:#d1434a
             .register
               padding: 1px 10px 0
@@ -765,6 +765,6 @@ export default {
             &:hover
               border: 2px solid #d1434a
               background: #d1434a
-              
-              
+
+
 </style>

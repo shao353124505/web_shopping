@@ -15,6 +15,7 @@
     "merge-descriptors": "^1.0.1",
     "morgan": "~1.9.0",
     "mysql": "latest",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.4.5",
+    "vue-i18n": "^8.21.1"
   }
 }

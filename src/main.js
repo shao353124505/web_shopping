@@ -8,6 +8,7 @@ import vueResource from 'vue-resource'
 import vueLazyLoad from 'vue-lazyload'
 import infiniteScroll from 'vue-infinite-scroll'
 import Base64 from 'js-base64'
+import i18n from "./plugins/i18n";
 Vue.use(vueResource)
 Vue.use(vueLazyLoad,{
 	loading:"./static/loading-svg/loading-bars.svg"  // 设置图片懒加载
@@ -20,6 +21,7 @@ new Vue({
   el: '#app',
   router,
   store,
+  i18n,
   template: '<App/>',
   components: { App }
 })
